@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+button{
+    font-family: inherit;
+    font-size: 16px;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: bisque;
+}
+
+.menu{
+    display: flex;
+    gap: 3px;
+}
+.menu__elem{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.menu__btn{
+    background-color: burlywood;
+    border-radius: 30px;
+    padding: 8px 30px;
+    cursor: pointer;
+    transition: .5s ease-in;
+}
+.menu__btn.active{
+    box-shadow: 2px 2px 10px bisque;
+}
+.submenu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-top: 10px;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+.submenu.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.submenu__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border: 1px solid #e5e5e5;
+    background-color: white;
+    padding: 8px;
+}
+
+.carimg{
+    margin-top: 80px;
+    margin-left: 310px;
+    width: 900px;
+    height: 600px;
+}
+
+.faq{
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 100px;
+}
+.faq__item{
+    padding: 16px;
+    border: 1px solid brown;
+    cursor: pointer;
+}
+.faq__item h3{
+    font-size: 26px;
+    font-weight: 500;
+    transition: .2s ease-in;
+}
+.faq__item p{
+    height: 0;
+    overflow: hidden;
+    transition: .2s ease-in;
+}
